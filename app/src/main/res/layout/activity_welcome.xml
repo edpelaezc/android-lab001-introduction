@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@color/material_dynamic_neutral90">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/material_dynamic_neutral90">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+
+            <ImageView
+                android:id="@+id/imageViewPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="33dp"
+                tools:srcCompat="@tools:sample/avatars"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:id="@+id/nombreTextView"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nombreValTextView"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eduardo Peláez"
+                android:id="@+id/nombreValTextView"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/nombreTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direccion"
+                android:id="@+id/dirTextView"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dirValTextView"
+                app:layout_constraintTop_toBottomOf="@+id/nombreTextView"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casa"
+                android:id="@+id/dirValTextView"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/dirTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nombreTextView"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:id="@+id/telTextView"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/telValTextView"
+                app:layout_constraintTop_toBottomOf="@+id/dirTextView"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+50242721388"
+                android:id="@+id/telValTextView"
+                android:textSize="24dp"
+                android:autoLink="phone"
+                app:layout_constraintStart_toEndOf="@+id/telTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dirTextView"/>
+
+
+
+            <TextView
+                android:id="@+id/sessionTokenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Session token: [Token Here]"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telTextView"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
