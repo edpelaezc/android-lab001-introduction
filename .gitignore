@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Gradle files
 .gradle/
 build/
@@ -33,6 +34,8 @@ google-services.json
 # Android Profiling
 *.hprof
 =======
+=======
+>>>>>>> af4d73c (feat: new activity and package for api consume)
 *.iml
 .gradle
 /local.properties
@@ -48,4 +51,7 @@ google-services.json
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 >>>>>>> 9d51d79 (feat: Initialize Android project)
+=======
+>>>>>>> af4d73c (feat: new activity and package for api consume)
