@@ -63,8 +63,7 @@
                 android:id="@+id/dirTextView"
                 android:textSize="24dp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/dirValTextView"
+                app:layout_constraintStart_toStartOf="@+id/nombreTextView"
                 app:layout_constraintTop_toBottomOf="@+id/nombreTextView"/>
 
 
@@ -74,8 +73,7 @@
                 android:text="Casa"
                 android:id="@+id/dirValTextView"
                 android:textSize="24dp"
-                app:layout_constraintStart_toEndOf="@+id/dirTextView"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/nombreValTextView"
                 app:layout_constraintTop_toBottomOf="@+id/nombreTextView"/>
 
 
@@ -94,7 +92,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+50242721388"
+                android:text="+50242721382"
                 android:id="@+id/telValTextView"
                 android:textSize="24dp"
                 android:autoLink="phone"
